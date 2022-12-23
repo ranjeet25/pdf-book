@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TURN JS</title>
+  </head>
+  <body>
+    <style>
+      body {
+        overflow: hidden;
+        background-size: 100% 100%;
+        background-color: rgb(217, 217, 217);
+      }
+
+      #book {
+        width: 1000px;
+        height: 600px;
+        margin: 5% auto;
+      }
+    </style>
+
+    <div id="book">
+      <div
+        style="background: url('book1/mmebg10.jpg'); background-size: cover"
+      ></div>
+      <div
+        style="background: url('book1/mmebg11.jpg'); background-size: cover"
+      ></div>
+      <div
+        style="background: url('book1/mmebg12.jpg'); background-size: cover"
+      ></div>
+      <div
+        style="background: url('book1/mmebg13.jpg'); background-size: cover"
+      ></div>
+      <div
+        style="background: url('book1/mmebg14.jpg'); background-size: cover"
+      ></div>
+      <div
+        style="background: url('book1/mmebg12.jpg'); background-size: cover"
+      ></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="turn.js"></script>
+
+    <script>
+      $("#book").turn({ gradients: true, acceleration: true });
+    </script>
+  </body>
+</html>
